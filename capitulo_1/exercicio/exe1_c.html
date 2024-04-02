@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leia o preço de um produto e informe as opções de pagamento da loja</title>
+</head>
+<body>
+    <script>
+        /* Elabora um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. 
+           Calcule e informe o valor para pagamentos á vista com 10% de desconto e o valor em 3x.
+
+            Exemplo:
+
+                Preço R$: 60.00
+                À Vista R$: 54.00
+                Ou 3x de R$: 20.00
+        */
+
+        let valorProduto = Number(prompt(`Qual valor do produto?`));
+        let prodAVista = valorProduto - (valorProduto * 0.10) 
+        let parcelado = valorProduto / 3
+        alert (` Preço R$: ${valorProduto.toFixed(2)}\n À Vista R$: ${prodAVista.toFixed(2)}\n Ou 3x de R$: ${parcelado.toFixed(2)}`)
+    </script>
+</body>
+</html>

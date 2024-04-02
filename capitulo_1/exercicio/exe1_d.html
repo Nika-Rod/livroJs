@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule e informa a média das notas</title>
+</head>
+<body>
+    <script>
+        /* Elabora um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informa a média das notas.
+
+            Exemplo:
+
+                1º Nota: 7.0
+                2º Nota: 8.0
+                Média: 7.5
+        */
+
+        let nota_1 = parseFloat(prompt("Primeira nota:"));
+        let nota_2 = parseFloat(prompt("Segunda Nota:"));
+        let total = nota_1 + nota_2;
+        let media = total / 2;
+        alert (` 1º Nota: ${nota_1.toFixed(1)}\n 2º Nota: ${nota_2.toFixed(1)}\n Média: ${media.toFixed(1)}`)
+
+    </script>
+</body>
+</html>
