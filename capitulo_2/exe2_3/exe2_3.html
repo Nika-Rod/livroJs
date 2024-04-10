@@ -6,21 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-        <!-- Elaborar um programa para uma revenda de veículos. O programa deve ler modelo e preço do veículo. Apresentar omo resposta o valor da entrada(50%)
+        <!-- Elaborar um programa para uma revenda de veículos. O programa deve ler modelo e preço do veículo. Apresentar como resposta o valor da entrada(50%)
             e o saldo em 12x. 
         
         Exemplo: 
-            Título file: 
-            Duração (min):
+            Veículo: 
+            Preço R$:
 
-            Botão(Converter em Horas e Minutos)
+            Botão(Ver Promoção)
 
-            Resultado Título
-            Resultado Hora e minutos.
+            Promoção: Veículo
+            Entrada de R$:
+            +12x de R$ 2000.00
         -->
     
         <h1>Revenda de Veículos JS</h1>
         
-        <p></p>
+        <form>
+            <p>Veículo: <input type="text" placeholder="Veículo" id="nVeiculo"> </p>
+            <p>Preço R$ <input type="number" name="preco" id="nPreco"> </p>
+            <input type="submit" value="Ver Promoção">
+        </form>
+
+        <h3 id="nomeVeiculo"></h3>
+        <h3 id="entradaVeiculo"></h3>
+        <h3 id="parcelaVeiculo"></h3>
+        
+        <script src="exe2_3.js"></script>
 </body>
 </html>
