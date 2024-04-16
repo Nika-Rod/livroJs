@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peso ideal</title>
+    <title>Avaliação Aluno</title>
 </head>
 <body>
-    <h1>Programa Cálculo do Peso Ideal</h1>
+
+    <h1>Programa do Aluno: </h1>
 
     <form>
-        <p> Nome: <input type="text"  id="nome" required></p>
-        <p> Sexo: 
-            <input type="radio" id="inM" required> Masculino
-            <input type="radio" id="inF" required> Feminino 
-        </p>
-        <p> Altura: <input type="number" min="0" step="0.01" name="Peso" id="altura"></p>
-        <input type="submit" value="Calcular Peso Ideal">
-        <input type="reset" value="Limpar Campos">
+        <p> Nome do Aluno: <input type="text" id="inNome"></p>
+        <p> 1º Nota: <input type="number" step="0.1" min="0" max="10" id="inPriNota"></p>
+        <p> 2º Nota: <input type="number" step="0.1" min="0" max="10" id="inSegNota"></p>
+        <input type="submit" value="Exibir Média e Situação">
     </form>
-
+    
     <h3></h3>
+    <h4></h4>
 
     <script src="exe4_1.js"></script>
 </body>

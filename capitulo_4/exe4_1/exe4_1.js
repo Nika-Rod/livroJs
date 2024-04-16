@@ -1,14 +1,23 @@
 const formulario = document.querySelector("form");
-const resultView = document.querySelector("h3");
+const infoNota = document.querySelector("h3");
+const infoView = document.querySelector("h4");
 
 formulario.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const nome = formulario.nome.value;
-    const sexoM = formulario.inM.checked;
-    const altura = formulario.altura.value;
+    const nome = formulario.inNome.value;
+    const priNota = Number(formulario.inPriNota.value);
+    const segNota =  Number(formulario.inSegNota.value);
 
-    const calculo = sexoM ? 22 * Math.pow(altura, 2) : 21 * Math.pow(altura, 2);
+    const media = (priNota + segNota) / 2
 
-    resultView.innerText = `${nome}: Seu peso ideal é ${calculo.toFixed(3)} kg`
+    infoNota.innerText = `Média das Notas ${media.toFixed(2)}`
+
+    if (media >= 7 ) {
+        infoView.innerText = `Parabéns ${nome}! Você foi aprovado(a)`
+        infoView.style.color = "green"
+    } else {
+        infoView.innerText = `Ops ${nome}... Você foi reprovado(a)`
+        infoView.style.color = "red"
+    }
 })
